@@ -76,3 +76,22 @@ fun main() {
     // Lambda expressions
     println({ string: String -> string.uppercase() }("hello"))
 }
+
+// Deklarasi kelas di luar main()
+class Contact(val id: Int, var email: String) {
+    fun printId() {
+        println(id)
+    }
+}
+
+fun main() {
+    // Create instance & Access properties
+    val contact = Contact(1, "mary@gmail.com")
+    println(contact.email)
+    
+    contact.email = "jane@gmail.com"
+    println(contact.email)
+    
+    // Member functions
+    contact.printId()
+}
