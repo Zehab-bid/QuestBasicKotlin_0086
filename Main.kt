@@ -28,3 +28,24 @@ fun main() {
     println(readOnlyJuiceMenu)
     println("The value of apple juice is: ${readOnlyJuiceMenu["apple"]}")
 }
+
+fun main() {
+    // If
+    val d: Int
+    val check = true
+    if (check) {
+        d = 1
+    } else {
+        d = 2
+    }
+    println(d)
+
+    // When
+    val obj = "Hello"
+    val result = when (obj) {
+        "1" -> "One"
+        "Hello" -> "Greeting"
+        else -> "Unknown"
+    }
+    println(result)
+}
