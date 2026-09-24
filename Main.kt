@@ -49,3 +49,30 @@ fun main() {
     }
     println(result)
 }
+
+// Fungsi ditulis di luar main()
+fun sum(x: Int, y: Int): Int {
+    return x + y
+}
+
+fun printMessageWithPrefix(message: String, prefix: String = "Info") {
+    println("[$prefix] $message")
+}
+
+fun main() {
+    // Loops (For)
+    for (number in 1..5) {
+        print(number)
+    }
+    println()
+
+    // Functions
+    println(sum(1, 2))
+    
+    // Named & Default arguments
+    printMessageWithPrefix(prefix = "Log", message = "Hello")
+    printMessageWithPrefix("Hello")
+
+    // Lambda expressions
+    println({ string: String -> string.uppercase() }("hello"))
+}
